@@ -24,11 +24,18 @@ namespace Test_API.Controllers
         [HttpGet("{id}", Name = "GetMember")]
         public IActionResult getMember(int id)
         {
+            if (!_memberData.MemberExists(id))
+            {
+                return NotFound();
+            }
+
             var memberFromRepo = _memberData.GetMember(id);
 
             var memberToReturn = Mapper.Map<MemberDto>(memberFromRepo);
 
             return Ok(memberToReturn);
+
+
 
         }
        

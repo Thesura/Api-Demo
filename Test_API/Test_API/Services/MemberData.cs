@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Internal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -28,6 +29,11 @@ namespace Test_API.Services
         public IEnumerable<Member> GetMembers()
         {
             return _context.Members.ToList();
+        }
+
+        public bool MemberExists(int id)
+        {
+            return _context.Members.Any(m => m.Id == id);
         }
 
         public bool Save()
