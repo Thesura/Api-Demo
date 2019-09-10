@@ -36,6 +36,12 @@ namespace Test_API.Services
             return _context.Members.Any(m => m.Id == id);
         }
 
+
+        public void DeleteMember(Member member)
+        {
+            _context.Members.Remove(member);
+        }  
+
         public bool Save()
         {
             return (_context.SaveChanges() >= 0);
