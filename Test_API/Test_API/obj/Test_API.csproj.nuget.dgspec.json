@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\GIT\\Api-Demo\\Test_API\\Test_API\\Test_API.csproj": {}
+    "C:\\Users\\TJMS\\Documents\\GitHub\\Api-Demo\\Test_API\\Test_API\\Test_API.csproj": {}
   },
   "projects": {
-    "Z:\\GIT\\Api-Demo\\Test_API\\Test_API\\Test_API.csproj": {
+    "C:\\Users\\TJMS\\Documents\\GitHub\\Api-Demo\\Test_API\\Test_API\\Test_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\GIT\\Api-Demo\\Test_API\\Test_API\\Test_API.csproj",
+        "projectUniqueName": "C:\\Users\\TJMS\\Documents\\GitHub\\Api-Demo\\Test_API\\Test_API\\Test_API.csproj",
         "projectName": "Test_API",
-        "projectPath": "Z:\\GIT\\Api-Demo\\Test_API\\Test_API\\Test_API.csproj",
-        "packagesPath": "C:\\Users\\Jayanga Palihena\\.nuget\\packages\\",
-        "outputPath": "Z:\\GIT\\Api-Demo\\Test_API\\Test_API\\obj\\",
+        "projectPath": "C:\\Users\\TJMS\\Documents\\GitHub\\Api-Demo\\Test_API\\Test_API\\Test_API.csproj",
+        "packagesPath": "C:\\Users\\TJMS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TJMS\\Documents\\GitHub\\Api-Demo\\Test_API\\Test_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jayanga Palihena\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TJMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
