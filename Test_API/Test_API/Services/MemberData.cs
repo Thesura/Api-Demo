@@ -25,6 +25,11 @@ namespace Test_API.Services
             return _context.Members.FirstOrDefault(m => m.Id == id);
         }
 
+        public void DeleteMember(Member member)
+        {
+            _context.Members.Remove(member);
+        }
+
         public IEnumerable<Member> GetMembers()
         {
             return _context.Members.ToList();

@@ -14,6 +14,8 @@ namespace Test_API.Services
 
         Member GetMember(int id);
 
+        void DeleteMember(Member member);
+
         bool Save();
     }
 }

@@ -12,3 +12,17 @@ C:\Users\TJMS\source\repos\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.Ra
 C:\Users\TJMS\source\repos\Test_API\Test_API\bin\Debug\netcoreapp2.2\Test_API.pdb
 C:\Users\TJMS\source\repos\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.dll
 C:\Users\TJMS\source\repos\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.pdb
+Z:\GIT\Api-Demo\Test_API\Test_API\bin\Debug\netcoreapp2.2\Test_API.deps.json
+Z:\GIT\Api-Demo\Test_API\Test_API\bin\Debug\netcoreapp2.2\Test_API.runtimeconfig.json
+Z:\GIT\Api-Demo\Test_API\Test_API\bin\Debug\netcoreapp2.2\Test_API.runtimeconfig.dev.json
+Z:\GIT\Api-Demo\Test_API\Test_API\bin\Debug\netcoreapp2.2\Test_API.dll
+Z:\GIT\Api-Demo\Test_API\Test_API\bin\Debug\netcoreapp2.2\Test_API.pdb
+Z:\GIT\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.csprojAssemblyReference.cache
+Z:\GIT\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.csproj.CoreCompileInputs.cache
+Z:\GIT\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.RazorAssemblyInfo.cache
+Z:\GIT\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.RazorAssemblyInfo.cs
+Z:\GIT\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.AssemblyInfoInputs.cache
+Z:\GIT\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.AssemblyInfo.cs
+Z:\GIT\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.RazorTargetAssemblyInfo.cache
+Z:\GIT\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.dll
+Z:\GIT\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.pdb
