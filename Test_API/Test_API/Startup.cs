@@ -39,6 +39,12 @@ namespace Test_API
             var connectionString = Configuration["connectionStrings:ApiDbConnectionString"];
             services.AddDbContext<ApiContext>(o => o.UseSqlServer(connectionString));
 
+            AutoMapper.Mapper.Initialize(cfg => {
+                cfg.CreateMap<Models.MemberForCreationDto, Entities.Member>();
+                cfg.CreateMap<Entities.Member, Models.MemberDto>();
+
+            }) ;
+
             services.AddScoped<IMemberData, MemberData>();
         }
 

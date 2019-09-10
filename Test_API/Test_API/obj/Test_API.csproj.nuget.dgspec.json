@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
             "EntityFramework": {
               "target": "Package",
               "version": "[6.2.0, )"

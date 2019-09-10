@@ -13,6 +13,6 @@ namespace Test_API.Entities
 
         }
 
-        public DbSet<Member> Memebers { get; set; }
+        public DbSet<Member> Members { get; set; }
     }
 }

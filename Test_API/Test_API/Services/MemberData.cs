@@ -17,17 +17,17 @@ namespace Test_API.Services
 
         public void AddMember(Member member)
         {
-            _context.Memebers.Add(member);
+            _context.Members.Add(member);
         }
 
         public Member GetMember(int id)
         {
-            return _context.Memebers.FirstOrDefault(m => m.Id == id);
+            return _context.Members.FirstOrDefault(m => m.Id == id);
         }
 
         public IEnumerable<Member> GetMembers()
         {
-            return _context.Memebers.ToList();
+            return _context.Members.ToList();
         }
 
         public bool Save()
