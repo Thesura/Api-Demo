@@ -31,7 +31,7 @@ namespace Test_API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Memebers");
+                    b.ToTable("Members");
                 });
 #pragma warning restore 612, 618
         }

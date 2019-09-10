@@ -8,7 +8,7 @@ namespace Test_API.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Memebers",
+                name: "Members",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -18,14 +18,14 @@ namespace Test_API.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Memebers", x => x.Id);
+                    table.PrimaryKey("PK_Members", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Memebers");
+                name: "Members");
         }
     }
 }
