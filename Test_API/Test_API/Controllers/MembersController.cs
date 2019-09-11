@@ -38,8 +38,19 @@ namespace Test_API.Controllers
 
 
         }
-       
-    
+
+        [HttpGet()]
+        public IActionResult GetAllMembers()
+        {
+            var memberFromRepo = _memberData.GetMembers();
+
+            var members = Mapper.Map<IEnumerable<MemberDto>>(memberFromRepo);
+
+            return new JsonResult(members);
+
+        }
+
+
         [HttpPost]
        public IActionResult addMember([FromBody] MemberForCreationDto member)
         {
@@ -61,5 +72,26 @@ namespace Test_API.Controllers
 
             return CreatedAtRoute("GetMember", new { id = memberToReturn.Id }, memberToReturn);
         }
+
+        [HttpDelete("{id}")]
+
+        public IActionResult deleteMember(int id)
+        {
+            var memberFromRepo = _memberData.GetMember(id);
+
+            if (memberFromRepo == null)
+            {
+                return NotFound();
+            }
+            _memberData.DeleteMember(memberFromRepo);
+
+            if (!_memberData.Save())
+            {
+                throw new Exception($"Delete a member {id} failed");
+            }
+
+            return NoContent();
+        }
+
     }
 }
