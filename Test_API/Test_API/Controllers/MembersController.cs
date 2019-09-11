@@ -13,6 +13,8 @@ namespace Test_API.Controllers
     [Route("api/members")]
     public class MembersController : Controller {
         private IMemberData _memberData;
+        private object patchDoc;
+        private int memberId;
 
         public MembersController(IMemberData memberData) 
         {
@@ -31,12 +33,12 @@ namespace Test_API.Controllers
             return Ok(memberToReturn);
 
         }
-       
-    
+
+
         [HttpPost]
-       public IActionResult addMember([FromBody] MemberForCreationDto member)
+        public IActionResult addMember([FromBody] MemberForCreationDto member)
         {
-            if(member == null)
+            if (member == null)
             {
                 return BadRequest();
             }
@@ -54,10 +56,41 @@ namespace Test_API.Controllers
 
             return CreatedAtRoute("GetMember", new { id = memberToReturn.Id }, memberToReturn);
 
-
+        }
 
             [HttpPatch("{id}")]
-            public IActionResult partiallyUpdateMembersController(Guid id, [FromBody] JsonPatchExtensions)
+            public IActionResult PartiallyUpdateMembersController(int id, [FromBody] JsonPatchExtensions<MemberDto>patchDoc)
+        {
+            if(patchDoc == null)
+            {
+                return BadRequest();
+            }
+            if (!_memberData.MemberExists(memberId))
+            {
+                return NotFound();
+            }
+            
+            var MemberFormRepo = _memberData.GetMember(memberId);
+
+            if(MemberFormRepo == null)
+            {
+                return NotFound();
+            }
+            var memberToPatch = Mapper.Map<MemberDto>(MemberFormRepo);
+
+            patchDoc.ApplyTo(memberToPatch);
+             
+            Mapper.Map(memberToPatch, MemberFormRepo);
+
+            _memberData.UpdateMembersController(MemberFormRepo);
+
+            if (!_memberData.Save())
+            {
+                throw new Exception($"Patching book {id} for Member {memberId} failed on save");
+            }
+
+            return NoContent();
+
         }
     }
 }

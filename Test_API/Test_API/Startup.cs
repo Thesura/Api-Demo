@@ -42,7 +42,8 @@ namespace Test_API
             AutoMapper.Mapper.Initialize(cfg => {
                 cfg.CreateMap<Models.MemberForCreationDto, Entities.Member>();
                 cfg.CreateMap<Entities.Member, Models.MemberDto>();
-
+                cfg.CreateMap<Models.MemberDto, Entities.ApiContext>();
+                cfg.CreateMap<Entities.Member, Models.MemberForUpdateDto>();
             }) ;
 
             services.AddScoped<IMemberData, MemberData>();
