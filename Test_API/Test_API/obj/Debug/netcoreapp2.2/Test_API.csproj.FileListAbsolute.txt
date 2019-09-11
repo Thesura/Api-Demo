@@ -17,7 +17,6 @@ C:\Users\TJMS\Documents\GitHub\Api-Demo\Test_API\Test_API\bin\Debug\netcoreapp2.
 C:\Users\TJMS\Documents\GitHub\Api-Demo\Test_API\Test_API\bin\Debug\netcoreapp2.2\Test_API.runtimeconfig.dev.json
 C:\Users\TJMS\Documents\GitHub\Api-Demo\Test_API\Test_API\bin\Debug\netcoreapp2.2\Test_API.dll
 C:\Users\TJMS\Documents\GitHub\Api-Demo\Test_API\Test_API\bin\Debug\netcoreapp2.2\Test_API.pdb
-C:\Users\TJMS\Documents\GitHub\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.csprojAssemblyReference.cache
 C:\Users\TJMS\Documents\GitHub\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.csproj.CoreCompileInputs.cache
 C:\Users\TJMS\Documents\GitHub\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.RazorAssemblyInfo.cache
 C:\Users\TJMS\Documents\GitHub\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.RazorAssemblyInfo.cs
@@ -26,3 +25,4 @@ C:\Users\TJMS\Documents\GitHub\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.
 C:\Users\TJMS\Documents\GitHub\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.RazorTargetAssemblyInfo.cache
 C:\Users\TJMS\Documents\GitHub\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.dll
 C:\Users\TJMS\Documents\GitHub\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.pdb
+C:\Users\TJMS\Documents\GitHub\Api-Demo\Test_API\Test_API\obj\Debug\netcoreapp2.2\Test_API.csprojAssemblyReference.cache
