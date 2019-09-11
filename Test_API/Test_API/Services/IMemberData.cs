@@ -15,6 +15,8 @@ namespace Test_API.Services
         bool MemberExists(int id);
         Member GetMember(int id);
 
+        void DeleteMember(Member member);
+
         bool Save();
     }
 }

@@ -61,5 +61,25 @@ namespace Test_API.Controllers
 
             return CreatedAtRoute("GetMember", new { id = memberToReturn.Id }, memberToReturn);
         }
+
+        [HttpDelete("{id}")]
+
+        public IActionResult deleteMember(int id)
+        {
+            var memberFromRepo = _memberData.GetMember(id);
+
+            if (memberFromRepo == null)
+            {
+                return NotFound();
+            }
+            _memberData.DeleteMember(memberFromRepo);
+
+            if (!_memberData.Save())
+            {
+                throw new Exception($"Delete a member {id} failed");
+            }
+
+            return NoContent();
+        }
     }
 }
