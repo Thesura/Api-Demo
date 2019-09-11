@@ -53,6 +53,11 @@ namespace Test_API.Controllers
             var memberToReturn = Mapper.Map<MemberDto>(memberForCreation);
 
             return CreatedAtRoute("GetMember", new { id = memberToReturn.Id }, memberToReturn);
+
+
+
+            [HttpPatch("{id}")]
+            public IActionResult partiallyUpdateMembersController(Guid id, [FromBody] JsonPatchExtensions)
         }
     }
 }
