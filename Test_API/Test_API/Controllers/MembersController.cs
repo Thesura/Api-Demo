@@ -93,5 +93,38 @@ namespace Test_API.Controllers
             return NoContent();
         }
 
+        [HttpPut("{id}")]
+        public IActionResult UpdateMember(int Id,
+           [FromBody] MemberForUpdateDto member)
+        {
+            if (member == null)
+            {
+                return BadRequest();
+            }
+
+            /*   if(!_memberData.MemberExists(memberId))
+               {
+                   return NotFound();
+               }
+                 */
+
+            var MemberForUpdateRepo = _memberData.GetMember(Id);
+            if (MemberForUpdateRepo == null)
+            {
+                return NotFound();
+            }
+
+
+            //map back to enitiy
+            Mapper.Map(member, MemberForUpdateRepo);
+
+            _memberData.UpdateMember(MemberForUpdateRepo);
+
+            if (!_memberData.Save())
+            {
+                throw new Exception($"Updating {Id} member fails on save");
+            }
+            return NoContent();
+        }
     }
 }
