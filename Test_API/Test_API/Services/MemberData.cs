@@ -40,11 +40,21 @@ namespace Test_API.Services
         public void DeleteMember(Member member)
         {
             _context.Members.Remove(member);
-        }  
+        }
+
+        public void UpdateMember(Member member)
+        {
+
+        }
 
         public bool Save()
         {
             return (_context.SaveChanges() >= 0);
+        }
+
+        public bool MemberExists(object memberId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

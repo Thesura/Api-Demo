@@ -17,6 +17,10 @@ namespace Test_API.Services
 
         void DeleteMember(Member member);
 
+        bool MemberExists(object memberId);
+
+        void UpdateMember(Member member);
+
         bool Save();
     }
 }
