@@ -5939,7 +5939,7 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
+      "sha512": "Kvh9I0E92K5rbbiukyQuP7V47EtDWTwsnqwOSK4ICh59laZCl16oHkJFB+alEX+GMNeuCYFlcP49twiwJjYWOw==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "hasTools": true,
@@ -9637,7 +9637,7 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
+      "sha512": "ZYssKUvB+2/9eo+6kPaypX/XEK04jX6yuRkR2fi+94MzX6ZF31JvVsT4jsc7zeSk7G/rS6z39pCrRJ3fDfMihw==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
@@ -12495,24 +12495,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TJMS\\.nuget\\packages\\": {},
+    "C:\\Users\\Malith\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TJMS\\Documents\\GitHub\\Api-Demo\\Test_API\\Test_API\\Test_API.csproj",
+      "projectUniqueName": "D:\\Github\\Api-Demo\\Test_API\\Test_API\\Test_API.csproj",
       "projectName": "Test_API",
-      "projectPath": "C:\\Users\\TJMS\\Documents\\GitHub\\Api-Demo\\Test_API\\Test_API\\Test_API.csproj",
-      "packagesPath": "C:\\Users\\TJMS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TJMS\\Documents\\GitHub\\Api-Demo\\Test_API\\Test_API\\obj\\",
+      "projectPath": "D:\\Github\\Api-Demo\\Test_API\\Test_API\\Test_API.csproj",
+      "packagesPath": "C:\\Users\\Malith\\.nuget\\packages\\",
+      "outputPath": "D:\\Github\\Api-Demo\\Test_API\\Test_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\TJMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Malith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
@@ -12580,10 +12583,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -12592,7 +12601,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "message": "Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
       "libraryId": "EntityFramework",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.2"

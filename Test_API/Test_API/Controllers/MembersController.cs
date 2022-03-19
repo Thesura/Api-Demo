@@ -114,7 +114,6 @@ namespace Test_API.Controllers
                 return NotFound();
             }
 
-
             //map back to enitiy
             Mapper.Map(member, MemberForUpdateRepo);
 

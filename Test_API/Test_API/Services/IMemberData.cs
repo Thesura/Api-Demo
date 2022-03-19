@@ -13,6 +13,7 @@ namespace Test_API.Services
         void AddMember(Member member);
 
         bool MemberExists(int id);
+
         Member GetMember(int id);
 
         void DeleteMember(Member member);
